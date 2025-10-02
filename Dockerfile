@@ -1,4 +1,4 @@
-FROM ghcr.io/nginx/nginx-unprivileged:stable as webserver
+FROM ghcr.io/nginx/nginx-unprivileged:stable AS webserver
 
 RUN echo "absolute_redirect off;" >/etc/nginx/conf.d/no-absolute_redirect.conf
 
